@@ -11,8 +11,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+      <div className='Page-container'>
+        <div className='content-wrap'>
       <Header/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
@@ -20,9 +21,10 @@ function App() {
         <Route exact path="/Photos" element={<Photos/>}/>
         <Route exact path="/Contact" element={<Contact/>}/>
       </Routes>
+        </div>
       <Footer/>
-      </Router>
-    </>
+      </div>
+    </Router>
   );
 }
 
