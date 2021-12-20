@@ -1,17 +1,10 @@
 header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: green;
-    height: fit-content;
-    color: black;
-    vertical-align: middle;
+    align-items: center;
 }
 
 nav {
-    width: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    vertical-align:middle;
 }
