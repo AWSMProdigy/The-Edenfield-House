@@ -8,6 +8,9 @@ import EdenfieldInside1 from '../../images/EdenfieldInside1.jpg';
 import EdenfieldInside2 from '../../images/EdenfieldInside2.jpg';
 import EdenfieldBed from '../../images/EdenfieldBed.jpg';
 import ScriptTag from 'react-script-tag';
+import Header from '../Header/Header';
+
+
 
 
 
@@ -16,6 +19,9 @@ import ScriptTag from 'react-script-tag';
 function Home() {
     return (
         <>
+        <div className='hContainer'>
+            <Header/>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active position-relative"></li>
@@ -27,29 +33,29 @@ function Home() {
                 <div class="carousel-item active">
                     <img class="d-block w-100" src={house} alt="First slide"/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Beyond Fear, Destiny Awaits</h3>
-                        <a href="/movies/Dune"><button class="btn custom-color text-black">Get Tickets for <i>Dune</i></button></a>
+                        <h3>Welcome to the beautiful Edenfield House!</h3>
+                        {/* <a href="/movies/Dune"><button class="btn custom-color text-black">Get Tickets for <i>Dune</i></button></a> */}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={EdenfieldInside1} alt="Second slide"/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>In the beginning...</h3>
-                        <a href="/movies/Eternals"><button class="btn custom-color text-black">Get Tickets for <i>Eternals</i></button></a>
+                        <h3>Enjoy the breathtaking interior</h3>
+                        {/* <a href="/movies/Eternals"><button class="btn custom-color text-black">Get Tickets for <i>Eternals</i></button></a> */}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={EdenfieldInside2} alt="Third slide"/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Bond is Back</h3>
-                        <a href="/movies/No Time To Die"><button class="btn custom-color text-black">Get Tickets for <i>No Time To Die</i></button></a>
+                        <h3>10 hand-painted murals</h3>
+                        {/* <a href="/movies/No Time To Die"><button class="btn custom-color text-black">Get Tickets for <i>No Time To Die</i></button></a> */}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={EdenfieldBed} alt="Fourth slide"/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Bond is Back</h3>
-                        <a href="/movies/No Time To Die"><button class="btn custom-color text-black">Get Tickets for <i>No Time To Die</i></button></a>
+                        <h3>Rest in unparalleled comfort</h3>
+                        {/* <a href="/movies/No Time To Die"><button class="btn custom-color text-black">Get Tickets for <i>No Time To Die</i></button></a> */}
                     </div>
                 </div>
             </div>
