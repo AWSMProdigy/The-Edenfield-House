@@ -1,3 +1,44 @@
 .reservationContainer {
     background-color: rgb(109, 109, 97);
 }
+
+.rooms{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room{
+    margin: 10px 10px;
+}
+
+.room h4 {
+    background-color: white;
+    margin: 0;
+}
+
+.room img {
+    border: 1px orange solid;
+    cursor: pointer;
+}
+
+.myModal {
+    margin: 0 auto;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+
+.modalPic {
+    border: 1px orange solid;
+    margin: 10px 10px;
+}

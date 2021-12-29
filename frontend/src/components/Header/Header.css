@@ -23,6 +23,7 @@
     z-index: 9;
     height: fit-content;
     flex-direction: column;
+    background-image: url("../../images/Carson.JPG");
 }
 
 .title, .navItem{

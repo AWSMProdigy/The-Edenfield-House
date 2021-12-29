@@ -30,12 +30,17 @@
 
 .page-text{
   width: 60%;
-  line-height: 50px;
+  line-height: 30px;
   margin: 10px 10px;
 }
 
 .page-wrapper{
   margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.emptySide{
+  width: 10%;
+  max-width: 3000px;
 }
