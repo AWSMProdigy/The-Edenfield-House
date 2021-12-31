@@ -1,29 +1,16 @@
+@import url(//fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap);
 :root{
     --darkGrey: green;
     --myCo: gold;
 }
 
-.hContainer{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    z-index: 9;
-    height: fit-content;
-    flex-direction: column;
+#title {
+    color: var(--myCo);
+    transition: .5s;
 }
 
-.pageHContainer {
-    display: flex;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    z-index: 9;
-    height: fit-content;
-    flex-direction: column;
-    background-image: url("../../images/Carson.JPG");
+#title:hover {
+    color: var(--darkGrey);
 }
 
 .title, .navItem{
@@ -32,9 +19,7 @@
     text-decoration: none;
     padding: 0 5px 3px 5px;
     border-bottom: 2px solid var(--myCo);
-    color: var(--myCo);
-    
-    color: var(--myCo);
+
 
     background-image: linear-gradient(180deg,
         rgba(0, 0, 255, 0) 0%,
@@ -54,35 +39,85 @@
     background-position: -100% 100%;
 }
 
-/* h1, h4 {
-    text-decoration: none;
-    margin: 0 5px 0 5px;
-    text-decoration: none;
-    padding: 0 5px 3px 5px;
-    border-bottom: 2px solid var(--myCo);
-    color: var(--myCo);
-    
-    color: var(--myCo);
+.navItem{
+    color: var(--darkGrey);
+    position: sticky;
+    top: 100px;
+}
 
-    background-image: linear-gradient(180deg,
-        var(--darkGrey) 0%,
-        var(--darkGrey) 50%,
-        var(--myCo) 50%,
-        var(--myCo) 100%);
-    background-size: 100% 200%;
-    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
-    color .2s linear;
-    transition-delay: 0.0s, 0.15s;
-    z-index: 100;
-} */
+.navItem h1 {
+    font-family: 'The Nautigal', cursive;
+}
 
 .myNav {
+    background-color: rgb(4, 53, 15);
+    position: sticky;
+    top: 0;
     display: flex;
-    width: 50%;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
-    z-index: 9;
+    z-index: 999;
     height: fit-content;
     font-size: smaller;
 }
+
+.navOptions {
+    display: flex;
+    color: var(--myCo)
+}
+
+.navColor {
+    color: var(--myCo);
+    transition: .5s;
+}
+
+.navColor:hover {
+    color: var(--darkGrey);
+}
+
+.menu-icon {
+    color: white;
+    display: none;
+  }
+  
+
+@media screen and (max-width: 960px){
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .navOptions {
+        display: none;
+        transition: all 0.5s ease;
+
+    }
+
+    .openMobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 0;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .navItem{
+        top: 0;
+        padding: 10px 10px;
+    }
+}
+

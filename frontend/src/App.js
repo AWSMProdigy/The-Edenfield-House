@@ -7,6 +7,9 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import Reservation from './components/Reservation/Reservation';
 import ScriptTag from 'react-script-tag';
+import Header from './components/Header/Header';
+import ScrollToTop from './components/ScrollToTop.js'
+
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -15,6 +18,8 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop/>
+      <Header/>
       <div className='routes-container'>
         <div className='content-wrap'>
       <Routes>

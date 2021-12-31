@@ -29,22 +29,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 100px;
+    padding: 2vh;
     /* color: gold; */
 }
 
 .container{
+    width: 95vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
     position: relative;
-    width: 1150px;
+    width: 100%;
     display: flex;
+    padding: 0;
     justify-content: center;
 }
 
@@ -97,21 +101,11 @@ section {
     margin-left: 50px;
 }
 
-.media-info{
-    width: 400px;
-    margin-left: 50px;
+.yellowBg {
+    background-color: gold;
 }
 
-.media-info li{
-    list-style: none;
-    font-size: 1.4em;
+.greenBg {
+    background-color:rgb(137, 170, 88);
 }
 
-.media-info li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.media-info li:not(:last-child){
-    margin-bottom: 50px;
-}

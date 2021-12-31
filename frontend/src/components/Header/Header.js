@@ -1,6 +1,9 @@
 import './Header.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const styledLink = { 
     textDecoration: "none",
@@ -22,43 +25,53 @@ const styledLink = {
 
 const removeDec = {
     textDecoration: "none",
-    color: "white",
     "&:hover": {
-        color: "var(--darkGrey)"
+        color: "gold"
     }
 }
 
 function Header() {
+
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false)
     return (
-        <>
-            <div className='title'>
-                <Link to="/" style={removeDec}>
+        <div className='myNav'>
+            <div style={{visibility: "hidden"}}>
+                <i><FontAwesomeIcon icon={click ? faTimes : faBars}/></i>
+            </div>     
+            <div className='navItem'>
+                <Link to="/" style={removeDec}id="title">
                     <h1>The Edenfield House</h1>
                 </Link>
             </div>
-            <div className='myNav'>
+            <div className='menu-icon' onClick={()=> handleClick()}>
+                <i><FontAwesomeIcon icon={click ? faTimes : faBars}/></i>
+            </div>
+            <div className={click ? 'openMobile' : 'navOptions'} onClick={() => closeMobileMenu()}>
                 <div className='navItem'>
-                    <Link to="/About" style={removeDec}>
+                    <Link to="/About" style={removeDec} className='navColor'>
                         <h4>About Us</h4>
                     </Link>
                 </div>
                 <div className='navItem'>
-                <Link to="/Photos" style={removeDec}>
+                <Link to="/Photos" style={removeDec} className='navColor'>
                     <h4>Photos</h4>
                 </Link>
                 </div>
                 <div className='navItem'>
-                <Link to="/reservation" style={removeDec}>
+                <Link to="/reservation" style={removeDec} className='navColor'>
                     <h4>Reservations</h4>
                 </Link>
                 </div>
                 <div className='navItem'>
-                <Link to="/Contact" style={removeDec}>
+                <Link to="/Contact" style={removeDec} className='navColor'>
                     <h4>Contact Us</h4>
                 </Link>
                 </div>
             </div>
-        </>
+        </div>       
     )
 }
 

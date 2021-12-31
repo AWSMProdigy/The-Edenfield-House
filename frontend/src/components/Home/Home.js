@@ -19,9 +19,6 @@ import Header from '../Header/Header';
 function Home() {
     return (
         <>
-        <div className='hContainer'>
-            <Header/>
-        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active position-relative"></li>
@@ -68,8 +65,8 @@ function Home() {
                 <span class="sr-only">Next</span>
             </a>
     </div>
-        <section>
-            <div className='container'>
+        <section className='yellowBg'>
+           
                 <div className='content'>
                     
                     <div className='image'>
@@ -82,21 +79,18 @@ function Home() {
                             sapien vitae interdum.</p>
                     </div>
                 </div>
-            </div>
+            
         </section>
-        <section>
-            <div className='container'>
-                <h3 className='section-title'>Lorem Ipsum</h3>
-                <div className='content'>
-                    <div className='image'>
-                        <img src={CarsonMountain} alt="Carson"></img>
-                    </div>
-                    <div className="info">
-                        <h4 className="info-title">Lorem Ipsum</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur in quam non pretium. Aliquam venenatis dolor eget purus pharetra, eu convallis metus commodo. Nam libero lectus, sagittis eu mattis non, lacinia ut velit. Etiam consequat tortor ut diam hendrerit malesuada. Praesent mattis ullamcorper est. Donec eget gravida elit, ac dapibus urna. Aenean iaculis, elit sit amet bibendum fermentum, justo magna ullamcorper enim, id congue mauris elit ac orci. 
-                            Donec gravida porttitor pharetra. Quisque sollicitudin lobortis 
-                            sapien vitae interdum.</p>
-                    </div>
+        <section className='greenBg'>
+            <div className='content'>
+                <div className='image'>
+                    <img src={CarsonMountain} alt="Carson"></img>
+                </div>
+                <div className="info">
+                    <h4 className="info-title">Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur in quam non pretium. Aliquam venenatis dolor eget purus pharetra, eu convallis metus commodo. Nam libero lectus, sagittis eu mattis non, lacinia ut velit. Etiam consequat tortor ut diam hendrerit malesuada. Praesent mattis ullamcorper est. Donec eget gravida elit, ac dapibus urna. Aenean iaculis, elit sit amet bibendum fermentum, justo magna ullamcorper enim, id congue mauris elit ac orci. 
+                        Donec gravida porttitor pharetra. Quisque sollicitudin lobortis 
+                        sapien vitae interdum.</p>
                 </div>
             </div>
         </section>

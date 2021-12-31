@@ -9,10 +9,6 @@ import deSoto from '../../images/DesotoMap.jpg';
 function About() {
     return (
         <div className='aboutContainer'>
-        
-            <div className='pageHContainer'>
-                <Header/>
-            </div>
             <div className='page-wrapper'>
                 <div className='about-side-bar'>
                     <ul>
